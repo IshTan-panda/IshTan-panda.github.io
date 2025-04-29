@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <title>My first web page</title>
     <meta charset="UTF-8" />
     <style>
       img {
         height: 200px;
         width: 200px;
-        border-radius: 100px;
+        border-radius: 50%; /* Better for perfect circles */
         float: right;
         margin-right: 20px;
+        object-fit: cover; /* Ensures image fills circle without distortion */
       }
       .username {
         font-weight: bold;
       }
+      body {
+        margin: 20px; /* Adds breathing room around content */
+        font-family: Arial, sans-serif; /* Better default font */
+      }
     </style>
-  </head>
-  <body>
-    <img src="images/IMG_1951.png" alt="Skibidi" />
+</head>
+<body>
+    <img src="images/IMG_1951.png" alt="Profile picture of @therizzler" /> <!-- More descriptive alt text -->
     <p class="username">@therizzler</p>
     <p>I love Valorant</p>
-  </body>
+    <div style="clear: both;"></div> 
+</body>
 </html>
